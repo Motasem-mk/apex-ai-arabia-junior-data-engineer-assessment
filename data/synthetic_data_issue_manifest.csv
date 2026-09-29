@@ -1,0 +1,18 @@
+dataset,issue_type,example,expected_handling
+appointments,duplicate_record,Exact duplicate appointment row,deduplicate
+appointments,missing_required_value,One appointment has missing patient_id,reject/quarantine
+appointments,invalid_timestamp,One appointment_time is 'not_a_date',reject/quarantine
+appointments,status_variants,COMPLETE/completed/CANCELED/NO_SHOW/Booked,normalize
+appointments,channel_variants,Web/CALL CENTER,normalize
+service_events,duplicate_record,Exact duplicate service row,deduplicate
+service_events,negative_amount,One service amount is -250.00,reject/quarantine
+service_events,invalid_timestamp,One impossible service timestamp,reject/quarantine
+service_events,orphan_fk,One appt_id references A9999,reject/quarantine
+service_events,patient_appointment_mismatch,patient_id disagrees with linked appointment,reject/quarantine
+service_events,status_variants,PAID/paid/SUBMITTED,normalize
+support_interactions,duplicate_record,Exact duplicate support row,deduplicate
+support_interactions,invalid_time_order,closed_at occurs before opened_at,reject/quarantine
+support_interactions,missing_closed_at,Resolved ticket has NULL closed_at,reject/quarantine
+support_interactions,orphan_fk,One appointment_ref references A8888,reject/quarantine
+support_interactions,patient_appointment_mismatch,patient_id disagrees with linked appointment,reject/quarantine
+support_interactions,label_variants,Phone/CHAT/resolved/OPEN,normalize

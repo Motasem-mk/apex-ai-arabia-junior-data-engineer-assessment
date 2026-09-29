@@ -1,0 +1,27 @@
+2026-09-29 22:15:13,183 | INFO | Starting batch batch_001
+2026-09-29 22:15:13,296 | INFO | Received | appointments=220 service_events=160 support_interactions=100
+2026-09-29 22:15:14,141 | INFO | appointments | received=220 accepted=217 rejected=2 duplicates_removed=1
+2026-09-29 22:15:14,141 | INFO | service_events | received=160 accepted=154 rejected=5 duplicates_removed=1
+2026-09-29 22:15:14,141 | INFO | support_interactions | received=100 accepted=92 rejected=7 duplicates_removed=1
+2026-09-29 22:15:14,141 | INFO | appointments DB | inserted=217 updated=0 unchanged=0
+2026-09-29 22:15:14,141 | INFO | service_events DB | inserted=154 updated=0 unchanged=0
+2026-09-29 22:15:14,141 | INFO | support_interactions DB | inserted=92 updated=0 unchanged=0
+2026-09-29 22:15:14,141 | INFO | Batch batch_001 succeeded
+2026-09-29 22:50:58,674 | INFO | Starting batch batch_001
+2026-09-29 22:50:58,724 | INFO | Received | appointments=220 service_events=160 support_interactions=100
+2026-09-29 22:51:00,618 | INFO | appointments | received=220 accepted=217 rejected=2 duplicates_removed=1
+2026-09-29 22:51:00,618 | INFO | service_events | received=160 accepted=154 rejected=5 duplicates_removed=1
+2026-09-29 22:51:00,618 | INFO | support_interactions | received=100 accepted=92 rejected=7 duplicates_removed=1
+2026-09-29 22:51:00,618 | INFO | appointments DB | inserted=0 updated=0 unchanged=217
+2026-09-29 22:51:00,618 | INFO | service_events DB | inserted=0 updated=0 unchanged=154
+2026-09-29 22:51:00,618 | INFO | support_interactions DB | inserted=0 updated=0 unchanged=92
+2026-09-29 22:51:00,618 | INFO | Batch batch_001 succeeded
+2026-09-29 23:01:12,688 | INFO | Starting batch batch_001
+2026-09-29 23:01:12,804 | INFO | Received | appointments=220 service_events=160 support_interactions=100
+2026-09-29 23:01:14,411 | INFO | appointments | received=220 accepted=217 rejected=2 duplicates_removed=1
+2026-09-29 23:01:14,411 | INFO | service_events | received=160 accepted=154 rejected=5 duplicates_removed=1
+2026-09-29 23:01:14,411 | INFO | support_interactions | received=100 accepted=92 rejected=7 duplicates_removed=1
+2026-09-29 23:01:14,411 | INFO | appointments DB | inserted=0 updated=0 unchanged=217
+2026-09-29 23:01:14,411 | INFO | service_events DB | inserted=0 updated=0 unchanged=154
+2026-09-29 23:01:14,411 | INFO | support_interactions DB | inserted=0 updated=0 unchanged=92
+2026-09-29 23:01:14,411 | INFO | Batch batch_001 succeeded
