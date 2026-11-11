@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NABA storyboard</title>
+<style>
+  html, body { margin: 0; background: #000; overflow: hidden; height: 100%; }
+  canvas { display: block; }
+  .ov { position: absolute; left: 0; right: 0; text-align: center; color: #fff;
+        font-family: "Liberation Sans", "DejaVu Sans", sans-serif; opacity: 0; }
+  #cap { bottom: 9vh; font-size: 4.3vh; line-height: 1.3; padding: 0 12vw;
+         text-shadow: 0 0.3vh 2.4vh rgba(0, 0, 0, .75), 0 0 0.4vh rgba(0, 0, 0, .6); }
+  #title { top: 9vh; }
+  #grad { position: absolute; left: 0; right: 0; bottom: 0; height: 34vh; opacity: 0;
+          background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,10,25,.55)); }
+  #title b { display: block; font-size: 17vh; letter-spacing: 3.2vh; margin-right: -3.2vh; font-weight: 700;
+             text-shadow: 0 0 6vh rgba(255, 190, 120, .55); }
+  #title span { display: block; font-size: 4.4vh; letter-spacing: 1.1vh; margin-top: 1vh;
+                text-shadow: 0 0.3vh 2vh rgba(0, 0, 0, .7); }
+  #title i { display: block; font-style: normal; font-size: 2.3vh; letter-spacing: .5vh; margin-top: 2.6vh; opacity: .8; }
+  #tag { position: absolute; top: 4.5vh; left: 4vw; color: #fff; opacity: .7;
+         font: 2.1vh "Liberation Sans", sans-serif; letter-spacing: .55vh; }
+  .clean .ov, .clean #tag, .clean #grad { display: none; }
+  #fade { position: absolute; inset: 0; background: #000; opacity: 1; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "/node_modules/three/build/three.module.js",
+               "three/addons/": "/node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="tag">NABA · CONCEPT FILM</div>
+<div id="grad"></div>
+<div id="cap" class="ov"></div>
+<div id="title" class="ov"><b>NABA</b><span>THE FLOATING SPRING</span><i>FICTIONAL CONCEPT · STORYBOARD CUT</i></div>
+<div id="fade"></div>
+<script type="module" src="main.js"></script>
+</body>
+</html>
