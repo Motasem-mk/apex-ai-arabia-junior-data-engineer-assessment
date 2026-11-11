@@ -10,7 +10,7 @@ A 46-second 3D concept film about a fictional floating desalination city, render
 ```
 npm install
 node render.mjs video output/naba_silent.mp4 1920 30
-CLEAN=1 node render.mjs stills output/frames 3,11,18.5,26,33,44 1920
+CLEAN=1 node render.mjs stills output/frames 3,11,18.5,26,36,44 1920
 ```
 
 Playwright with Chromium must be available globally. Software rendering takes about 20 minutes at 1080p.
